@@ -23,7 +23,7 @@ class MultiSelectChipField<V> extends FormField<List<V>> {
   /// The icon displayed in front of text on selected chips.
   final Icon? icon;
 
-  /// Replaces the deafult search icon when searchable is true.
+  /// Replaces the default search icon when searchable is true.
   final Icon? searchIcon;
 
   /// Replaces the default close search icon when searchable is true.
@@ -270,7 +270,7 @@ class __MultiSelectChipFieldViewState<V>
       _selectedValues.addAll(widget.initialValue!);
     }
     if (widget.scrollControl != null && widget.scroll)
-      WidgetsBinding.instance!.addPostFrameCallback((_) => _scrollToPosition());
+      WidgetsBinding.instance.addPostFrameCallback((_) => _scrollToPosition());
   }
 
   _scrollToPosition() {
